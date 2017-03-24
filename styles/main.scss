@@ -1,3 +1,94 @@
 body {
-	background: #ece7e7;
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  background: #E6E6FA;
 }
+
+#header {
+  text-align: center;
+  margin-bottom: 95px;
+}
+
+#tic-tac-toe {
+  margin-bottom: 25px;
+}
+
+#left-container {
+  float: left;
+  width: 50%;
+}
+
+#right-container {
+  float: right;
+  width: 50%;
+  text-align: center;
+}
+
+#moose {
+  padding-left: 81px;
+  margin-top: -65px;
+  width: 50%;
+}
+
+.wearing-clothing {
+  width: 10%;
+  position: absolute;
+}
+
+.clothing-preview {
+  width: 7%;
+  margin: 10px;
+  margin-bottom: 25px;
+}
+
+
+
+.no_item {
+  display: none;
+}
+
+.party-llama, .party-moose {
+  left: 278px;
+  top: 123px;
+}
+
+.winter-llama, .winter-moose {
+  left: 270px;
+  top: 120px;
+}
+
+.crown-llama, .crown-moose {
+  left: 255px;
+  top: 155px;
+}
+
+.bowtie-llama {
+  top: 362px;
+  left: 265px;
+}
+
+.bowtie-moose {
+  top: 348px;
+  left: 215px;
+}
+
+.scarf-llama {
+  top: 385px;
+  left: 258px;
+}
+
+.scarf-moose {
+  top: 358px;
+  left: 206px;
+}
+
+.cape-llama {
+  top: 385px;
+  left: 220px;
+}
+
+.cape-moose {
+  top: 358px;
+  left: 182px;
+}
+
