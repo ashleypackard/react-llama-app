@@ -32,6 +32,23 @@ const neckwear_array = [
   ["cape", capeNeck]
 ];
 
+function Animal(props) {
+  let animal_type = props.value == "llama" ? llamaPic : moosePic;
+  return (
+    <div id={props.value}>
+      <img src={animal_type} />
+    </div>
+  );
+}
+
+function AnimalParty(props) {
+  return (
+    <h1 onClick={() => props.onClick()} className={props.value}>
+      {props.value.toUpperCase()} PARTY
+    </h1>
+  );
+}
+
 class App extends React.Component {
   constructor() {
     super();
