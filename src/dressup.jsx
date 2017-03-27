@@ -2,10 +2,9 @@ import React from 'react';
 import '../styles/index.scss';
 
 import noItem from "../imgs/do-not-enter.png";
-
 const default_no_item = noItem;
 
-class DressUp extends React.Component {
+export default class DressUp extends React.Component {
   render() {
     const wardrobe_names = this.props.wardrobe_names
     const wardrobe = this.props.wardrobe;
@@ -28,5 +27,3 @@ class DressUp extends React.Component {
     );
   }
 }
-
-module.exports = DressUp;

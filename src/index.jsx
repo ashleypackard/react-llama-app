@@ -3,9 +3,8 @@ import ReactDOM from 'react-dom';
 import '../styles/index.scss';
 import DressUp from './dressup.jsx';
 import ClothingPreview from './clothing_preview.jsx';
-
-import llamaPic from "../imgs/llama.jpg";
-import moosePic from "../imgs/mystic_moose.gif";
+import AnimalPartyTitle from './animal_party_title.jsx';
+import Animal from './animal.jsx';
 
 import noItem from "../imgs/do-not-enter.png";
 import partyHat from "../imgs/hats/partyhat.png";
@@ -31,23 +30,6 @@ const neckwear_array = [
   ["scarf", scarfNeck],
   ["cape", capeNeck]
 ];
-
-function Animal(props) {
-  let animal_type = props.value == "llama" ? llamaPic : moosePic;
-  return (
-    <div id={props.value}>
-      <img src={animal_type} />
-    </div>
-  );
-}
-
-function AnimalParty(props) {
-  return (
-    <h1 onClick={() => props.onClick()} className={props.value}>
-      {props.value.toUpperCase()} PARTY
-    </h1>
-  );
-}
 
 class App extends React.Component {
   constructor() {
@@ -86,7 +68,7 @@ class App extends React.Component {
     return (
       <div>
         <div id="header">
-          <AnimalParty value={this.state.mode} onClick={() => this.handleTitleClick(this.state.mode)} />
+          <AnimalPartyTitle value={this.state.mode} onClick={() => this.handleTitleClick(this.state.mode)} />
           <p>Click on a different clothing items to dress up the llama!</p>
         </div>
         <div id="left-container">

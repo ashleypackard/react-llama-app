@@ -6,7 +6,7 @@ function ClothingPreviewImg(props) {
   );
 }
 
-class ClothingPreview extends React.Component {
+export default class ClothingPreview extends React.Component {
   render() {
     const arr = this.props.clothing_array;
     const clothes = arr.map((item, index) => {
@@ -21,5 +21,3 @@ class ClothingPreview extends React.Component {
     );
   }
 }
-
-module.exports = ClothingPreview;
